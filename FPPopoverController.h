@@ -42,6 +42,9 @@
 /** @brief allow reading in order to integrate other open-source **/
 @property(nonatomic,readonly) FPTouchView* touchView;
 @property(nonatomic,readonly) FPPopoverView* contentView;
+/* Returns whether the popover is visible (presented) or not.
+ */
+@property (nonatomic, readonly, getter=isPopoverVisible) BOOL popoverVisible;
 
 @property(nonatomic,assign) FPPopoverArrowDirection arrowDirection;
 

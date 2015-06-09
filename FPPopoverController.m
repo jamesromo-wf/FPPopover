@@ -160,6 +160,13 @@
     return self;
 }
 
+-(BOOL)isPopoverVisible {
+    if (self.isViewLoaded && self.view.window) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
 
 -(void)setTint:(FPPopoverTint)tint
 {
@@ -602,7 +609,6 @@
     _alpha = alpha;
     self.view.alpha = alpha;
 }
-
 
 
 
